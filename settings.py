@@ -5,7 +5,7 @@ class AppSettings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
     # Embeddings config
-    EMBEDDING_MODEL_ID: str = "sentence-transformers/all-MiniLM-L6-v2"
+    EMBEDDING_MODEL_ID: str = "sentence-transformers/all-MiniLM-L6-v2"#instruct-xl
     EMBEDDING_MODEL_MAX_INPUT_LENGTH: int = 256
     EMBEDDING_SIZE: int = 384
     EMBEDDING_MODEL_DEVICE: str = "cpu"
